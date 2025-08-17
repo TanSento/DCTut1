@@ -35,11 +35,14 @@ The application includes three pre-configured students:
 - `README.md`
 
 ## Class Hierarchy
-Person (Base Class) 
-??? Properties: Name 
-? ??? Student (Derived Class) 
-??? Properties: Id, University 
-??? Methods: ToString() override
+
+```
+Person (Base Class)
+├── Properties: Name
+└── Student (Derived Class)
+    ├── Properties: Id, University
+    └── Methods: ToString() override
+```
 
 ## Requirements
 
@@ -76,18 +79,22 @@ Person (Base Class)
 ## Code Examples
 
 ### Student Class Usage
-Student student = new Student(); 
-student.Name = "John Doe"; 
-student.Id = 104; 
-student.University = "MIT"; 
+```csharp
+Student student = new Student();
+student.Name = "John Doe";
+student.Id = 104;
+student.University = "MIT";
 Console.WriteLine(student.ToString());
+```
 
 ### Accessing Student List
-List<Student> students = StudentList.Students(); 
-foreach (Student student in students) 
-{ 
-Console.WriteLine($"ID: {student.Id}, Name: {student.Name}"); 
+```csharp
+List<Student> students = StudentList.Students();
+foreach (Student student in students)
+{
+    Console.WriteLine($"ID: {student.Id}, Name: {student.Name}");
 }
+```
 
 ## Error Handling
 
@@ -98,7 +105,7 @@ The application includes robust error handling for:
 
 ## Technical Notes
 
-- Uses **object-oriented inheritance** (Person ? Student)
+- Uses **object-oriented inheritance** (Person → Student)
 - Implements **property accessors** for encapsulation
 - Demonstrates **method overriding** with `ToString()`
 - Features **exception handling** with try-catch blocks
@@ -116,4 +123,3 @@ Potential improvements could include:
 ## License
 
 This project is for educational purposes and demonstrates basic C# and WPF concepts.
-
