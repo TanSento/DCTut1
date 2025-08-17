@@ -1,4 +1,4 @@
-# Student Management System
+﻿# Student Management System
 
 A simple student management application built with WPF (.NET Framework 4.7.2) that demonstrates object-oriented programming concepts and Windows desktop application development.
 
@@ -22,16 +22,16 @@ The application includes three pre-configured students:
 - **Adam** (ID: 103) - Murdoch University
 
 ## Project Structure
-??? ConsoleApp1/ 
-?   ??? Person.cs          # Base class with Name property 
-?   ??? Student.cs         # Student class inheriting from Person 
-?   ??? StudentList.cs     # Static data provider for students 
-?   ??? Program.cs         # Console application entry point 
-??? WpfApp1/ 
-?   ??? MainWindow.xaml    # UI layout definition 
-?   ??? MainWindow.xaml.cs # UI event handlers and logic 
-?   ??? App.xaml           # Application configuration 
-??? README.md
+├── ConsoleApp1/
+│   ├── Person.cs          # Base class with Name property
+│   ├── Student.cs         # Student class inheriting from Person
+│   ├── StudentList.cs     # Static data provider for students
+│   └── Program.cs         # Console application entry point
+├── WpfApp1/
+│   ├── MainWindow.xaml    # UI layout definition
+│   ├── MainWindow.xaml.cs # UI event handlers and logic
+│   └── App.xaml           # Application configuration
+└── README.md
 
 ## Class Hierarchy
 Person (Base Class) 
